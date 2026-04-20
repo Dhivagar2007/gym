@@ -1,11 +1,12 @@
-const repo = "gym";
+const isProd = process.env.NODE_ENV === 'production';
 
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  output: "export", // Required for GitHub Pages
+  basePath: isProd ? "/gym" : "",
+  assetPrefix: isProd ? "/gym/" : "",
   images: { unoptimized: true },
-
-  basePath: `/${repo}`,
-  assetPrefix: `/${repo}/`,
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
