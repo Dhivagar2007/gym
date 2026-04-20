@@ -1,13 +1,18 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "static/chunks/0v~j9j69q0unx.js"
+    "static/chunks/0l9j9qx8m_btt.js"
   ],
   "/_error": [
-    "static/chunks/0zofpohjc1_l~.js"
+    "static/chunks/17ya91~05apu9.js"
   ],
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/gym//_next/:path+",
+        "destination": "/gym/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
