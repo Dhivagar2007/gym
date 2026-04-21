@@ -5,18 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "predeploy": "next build",
-    "deploy": "npm run build && gh-pages -d out -f",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^16.2.4",
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "^16.2.4",
-    "gh-pages": "^6.3.0"
+    "eslint-config-next": "14.2.3"
   }
 }

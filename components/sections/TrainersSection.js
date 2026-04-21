@@ -51,11 +51,13 @@ export default function TrainersSection() {
                 </div>
               )}
               <div className="trainer-img-wrap">
-                <img
-                  src={`/${trainer.name.toLowerCase().split(' ')[0]}-trainer.png`}
-                  alt={trainer.name}
-                  className="trainer-avatar-img"
-                />
+                {trainer.image ? (
+                  <img src={trainer.image} alt={trainer.name} className="trainer-avatar-img" />
+                ) : (
+                  <div className="trainer-avatar-svg">
+                    <span className="avatar-icon">{trainer.icon}</span>
+                  </div>
+                )}
                 <div className="trainer-overlay">
                   <div className="trainer-overlay-cta">View Profile →</div>
                 </div>

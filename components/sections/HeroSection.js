@@ -35,7 +35,7 @@ export default function HeroSection() {
 
   return (
     <section id="hero">
-      <div className="hero-bg" style={{ backgroundImage: 'url(/hero-bg.png)' }} />
+      <div className="hero-bg" />
       <div className="hero-grid" />
       <div className="particles" id="particles" />
 

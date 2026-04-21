@@ -38,11 +38,13 @@ export default function TrainerModal({ trainer, onClose }) {
     <div className="tmodal-backdrop" onClick={(e) => e.target === e.currentTarget && onClose()}>
       <div className="tmodal">
         <div className="tmodal-hero">
-          <img
-            src={`/${trainer.name.toLowerCase().split(' ')[0]}-trainer.png`}
-            alt={trainer.name}
-            className="tmodal-avatar-img"
-          />
+          <div className="tmodal-avatar">
+            {trainer.image ? (
+              <img src={trainer.image} alt={trainer.name} className="tmodal-avatar-img" />
+            ) : (
+              trainer.icon
+            )}
+          </div>
           <div style={{ flex: 1 }}>
             <div className="tmodal-name">{trainer.name}</div>
             <div className="tmodal-role">{trainer.role}</div>
