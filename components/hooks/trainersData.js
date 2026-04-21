@@ -1,6 +1,8 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const TRAINERS = [
   {
-    id: 0, image: '/arjun-trainer.png', icon: '💪', name: 'Arjun Mehta', role: 'CrossFit & HIIT Coach',
+    id: 0, image: `${basePath}/arjun-trainer.png`, icon: '💪', name: 'Arjun Mehta', role: 'CrossFit & HIIT Coach',
     rating: '4.9', exp: '12 years', clients: '500+', tags: ['strength', 'cardio'],
     bio: 'Arjun is a former national-level athlete who turned his passion for high-intensity training into a decade-long coaching career. Known for his explosive HIIT circuits and CrossFit WODs, he has helped hundreds of clients break plateaus and achieve elite fitness levels.',
     specs: ['HIIT Training', 'CrossFit WOD', 'Functional Fitness', 'Fat Loss', 'Athletic Conditioning'],
@@ -14,7 +16,7 @@ const TRAINERS = [
     isBadgeTop: true,
   },
   {
-    id: 1, image: '/priya-trainer.png', icon: '🧘', name: 'Priya Sharma', role: 'Yoga & Wellness Coach',
+    id: 1, image: `${basePath}/priya-trainer.png`, icon: '🧘', name: 'Priya Sharma', role: 'Yoga & Wellness Coach',
     rating: '4.8', exp: '9 years', clients: '300+', tags: ['yoga'],
     bio: 'Priya blends traditional hatha yoga with modern mindfulness techniques. Trained in Rishikesh and certified internationally, she creates personalised flows that improve flexibility, mental clarity, and overall wellness.',
     specs: ['Hatha Yoga', 'Power Yoga', 'Prenatal Yoga', 'Meditation', 'Breathwork'],
@@ -27,7 +29,7 @@ const TRAINERS = [
     ],
   },
   {
-    id: 2, image: '/rohan-trainer.png', icon: '🏋️', name: 'Rohan Das', role: 'Strength & Power Coach',
+    id: 2, image: `${basePath}/rohan-trainer.png`, icon: '🏋️', name: 'Rohan Das', role: 'Strength & Power Coach',
     rating: '5.0', exp: '15 years', clients: '700+', tags: ['strength'],
     bio: "With a background in competitive powerlifting and 15 years of coaching experience, Rohan Das is IronPulse's most decorated strength coach. He specialises in progressive overload programs and compound lift mastery.",
     specs: ['Powerlifting', 'Bodybuilding', 'Hypertrophy', 'Olympic Lifting', 'Injury Rehab'],
@@ -41,7 +43,7 @@ const TRAINERS = [
     isBadgeTop: true,
   },
   {
-    id: 3, image: '/meera-trainer.png', icon: '🥗', name: 'Meera Nair', role: 'Nutrition Coach',
+    id: 3, image: `${basePath}/meera-trainer.png`, icon: '🥗', name: 'Meera Nair', role: 'Nutrition Coach',
     rating: '4.7', exp: '8 years', clients: '400+', tags: ['nutrition'],
     bio: 'Meera is a certified dietitian who believes food is medicine. She creates science-backed, culturally-sensitive meal plans that work for real Indian families. Her approach is sustainable, realistic, and deeply personal.',
     specs: ['Weight Loss Diets', 'Sports Nutrition', 'Gut Health', 'Macro Planning', 'Supplement Guidance'],
@@ -54,7 +56,7 @@ const TRAINERS = [
     ],
   },
   {
-    id: 4, image: '/vikram-trainer.png', icon: '🏃', name: 'Vikram Singh', role: 'Endurance Specialist',
+    id: 4, image: `${basePath}/vikram-trainer.png`, icon: '🏃', name: 'Vikram Singh', role: 'Endurance Specialist',
     rating: '4.8', exp: '11 years', clients: '350+', tags: ['cardio'],
     bio: 'Vikram is a marathon finisher and certified endurance coach who has trained athletes across distances from 5K fun runs to ultra-marathons. He uses heart-rate-based training and periodisation.',
     specs: ['Running Coaching', 'Marathon Prep', 'Triathlon Training', 'VO2 Max', 'Cycling & Swimming'],

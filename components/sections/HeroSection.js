@@ -14,6 +14,8 @@ function StatItem({ target, label }) {
 }
 
 export default function HeroSection() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   useEffect(() => {
     const container = document.getElementById('particles');
     if (!container) return;
@@ -35,7 +37,7 @@ export default function HeroSection() {
 
   return (
     <section id="hero">
-      <div className="hero-bg" />
+      <div className="hero-bg" style={{ backgroundImage: `url('${basePath}/hero-bg.png')` }} />
       <div className="hero-grid" />
       <div className="particles" id="particles" />
 
